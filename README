@@ -1,1 +1,240 @@
-hello world!
+Welcome to Git (version 1.7.8-preview20111206)
+
+
+Run 'git help git' to display the help index.
+Run 'git help <command>' to display help for specific commands.
+
+Administrator@WWW-0F1F3BCC3BB ~
+$ mkdir ~/Aifia
+
+Administrator@WWW-0F1F3BCC3BB ~
+$ cd ~/Aifia
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia
+$ git init
+Initialized empty Git repository in c:/Documents and Settings/Administrator/Aifi
+a/.git/
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ touch README
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git add README
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git commit -m 'first commit'
+[master (root-commit) 46bc7c6] first commit
+ Committer: unknown <Administrator@WWW-0F1F3BCC3BB.(none)>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 0 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ ssh -T git@github.com
+The authenticity of host 'github.com (207.97.227.239)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added 'github.com,207.97.227.239' (RSA) to the list of know
+n hosts.
+Permission denied (publickey).
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ ssh -T git@github.com
+Permission denied (publickey).
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ ls
+README
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ cd..
+sh.exe": cd..: command not found
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ cd.
+sh.exe": cd.: command not found
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ cd /
+
+Administrator@WWW-0F1F3BCC3BB /
+$ ls
+Git Bash.lnk  ReleaseNotes.rtf  cmd  etc          lib      share  unins000.dat
+Git Bash.vbs  bin               doc  git-cheetah  libexec  ssl    unins000.exe
+
+Administrator@WWW-0F1F3BCC3BB /
+$ cd ~/.sh
+sh.exe": cd: /c/Documents and Settings/Administrator/.sh: No such file or direct
+ory
+
+Administrator@WWW-0F1F3BCC3BB /
+$ cd ~/.ssh
+
+Administrator@WWW-0F1F3BCC3BB ~/.ssh
+$ ssh -T git@github.com
+Permission denied (publickey).
+
+Administrator@WWW-0F1F3BCC3BB ~/.ssh
+$ ssh-keygen -t rsa -C "flying163@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Documents and Settings/Administrator/.ss
+h/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Documents and Settings/Administrator/.s
+sh/id_rsa.
+Your public key has been saved in /c/Documents and Settings/Administrator/.ssh/i
+d_rsa.pub.
+The key fingerprint is:
+ac:89:69:98:a5:af:c4:cb:69:06:13:2d:5e:c2:1d:a3 flying163@gmail.com
+
+Administrator@WWW-0F1F3BCC3BB ~/.ssh
+$ ssh -T git@github.com
+Enter passphrase for key '/c/Documents and Settings/Administrator/.ssh/id_rsa':
+
+Hi fia! You've successfully authenticated, but GitHub does not provide shell acc
+ess.
+
+Administrator@WWW-0F1F3BCC3BB ~/.ssh
+$ git config --global user.name "Fia163"
+
+Administrator@WWW-0F1F3BCC3BB ~/.ssh
+$ git config --global user.email "flying163@gmail.com"
+
+Administrator@WWW-0F1F3BCC3BB ~/.ssh
+$ cd my_onther_repo
+sh.exe": cd: my_onther_repo: No such file or directory
+
+Administrator@WWW-0F1F3BCC3BB ~/.ssh
+$ git config --global github.user fia
+
+Administrator@WWW-0F1F3BCC3BB ~/.ssh
+$ git config --global github.token 66587038f1
+
+Administrator@WWW-0F1F3BCC3BB ~/.ssh
+$ mkdir ~/fia-code
+
+Administrator@WWW-0F1F3BCC3BB ~/.ssh
+$ cd ~/fia-code
+
+Administrator@WWW-0F1F3BCC3BB ~/fia-code
+$ git init
+Initialized empty Git repository in c:/Documents and Settings/Administrator/fia-
+code/.git/
+
+Administrator@WWW-0F1F3BCC3BB ~/fia-code (master)
+$ touch README
+
+Administrator@WWW-0F1F3BCC3BB ~/fia-code (master)
+$ git add README
+
+Administrator@WWW-0F1F3BCC3BB ~/fia-code (master)
+$ git commit -m 'first commit'
+[master (root-commit) f183d4e] first commit
+ 0 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README
+
+Administrator@WWW-0F1F3BCC3BB ~/fia-code (master)
+$ git remote add origin git@github.com:fia/fia-code.git
+
+Administrator@WWW-0F1F3BCC3BB ~/fia-code (master)
+$ git push origin master
+Enter passphrase for key '/c/Documents and Settings/Administrator/.ssh/id_rsa':
+
+ERROR: fia/fia-code.git doesn't exist. Did you enter it correctly?
+fatal: The remote end hung up unexpectedly
+
+Administrator@WWW-0F1F3BCC3BB ~/fia-code (master)
+$ git remote add origin git@github.com:fia/AiFia.git
+fatal: remote origin already exists.
+
+Administrator@WWW-0F1F3BCC3BB ~/fia-code (master)
+$ git push -u origin master
+Enter passphrase for key '/c/Documents and Settings/Administrator/.ssh/id_rsa':
+
+ERROR: fia/fia-code.git doesn't exist. Did you enter it correctly?
+fatal: The remote end hung up unexpectedly
+
+Administrator@WWW-0F1F3BCC3BB ~/fia-code (master)
+$ cd existing_git_repo
+sh.exe": cd: existing_git_repo: No such file or directory
+
+Administrator@WWW-0F1F3BCC3BB ~/fia-code (master)
+$ cd ~/Aifia
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ cd existing_git_repo
+sh.exe": cd: existing_git_repo: No such file or directory
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git remote add origin git@github.com:fia/AiFia.git
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git push -u origin master
+Enter passphrase for key '/c/Documents and Settings/Administrator/.ssh/id_rsa':
+
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 224 bytes, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:fia/AiFia.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ ls
+README
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git push -u origin master
+Enter passphrase for key '/c/Documents and Settings/Administrator/.ssh/id_rsa':
+
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git remote add origin git@github.com:fia/AiFia.git
+fatal: remote origin already exists.
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git push -u origin master
+Enter passphrase for key '/c/Documents and Settings/Administrator/.ssh/id_rsa':
+
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git add README
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git commit -m 'second commit'
+[master 47f55c4] second commit
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git remote add origin git@github.com:fia/AiFia.git
+fatal: remote origin already exists.
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git push -u origin master
+Enter passphrase for key '/c/Documents and Settings/Administrator/.ssh/id_rsa':
+
+Counting objects: 5, done.
+Writing objects: 100% (3/3), 250 bytes, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:fia/AiFia.git
+   46bc7c6..47f55c4  master -> master
+Branch master set up to track remote branch master from origin.
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$
