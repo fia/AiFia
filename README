@@ -1,16 +1,3 @@
-Welcome to Git (version 1.7.8-preview20111206)
-
-
-Run 'git help git' to display the help index.
-Run 'git help <command>' to display help for specific commands.
-
-Administrator@WWW-0F1F3BCC3BB ~
-$ mkdir ~/Aifia
-
-Administrator@WWW-0F1F3BCC3BB ~
-$ cd ~/Aifia
-
-Administrator@WWW-0F1F3BCC3BB ~/Aifia
 $ git init
 Initialized empty Git repository in c:/Documents and Settings/Administrator/Aifi
 a/.git/
@@ -120,7 +107,7 @@ Administrator@WWW-0F1F3BCC3BB ~/.ssh
 $ git config --global github.user fia
 
 Administrator@WWW-0F1F3BCC3BB ~/.ssh
-$ git config --global github.token 66587038f1
+$ git config --global github.token 6658707dca0bcf49320517df3f7b38f1
 
 Administrator@WWW-0F1F3BCC3BB ~/.ssh
 $ mkdir ~/fia-code
@@ -234,6 +221,79 @@ Writing objects: 100% (3/3), 250 bytes, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To git@github.com:fia/AiFia.git
    46bc7c6..47f55c4  master -> master
+Branch master set up to track remote branch master from origin.
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git commit -m "third commit'
+>
+>
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git commit -m "third commit"
+
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   README
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git commit -m 'third commit'
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   README
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git commit -a
+Aborting commit due to empty commit message.
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git commit -a '3'
+fatal: Paths with -a does not make sense.
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git commit -m 'third commit'
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   README
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git remote add origin git@github.com:fia/AiFia.git
+fatal: remote origin already exists.
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git add README
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git commit -m 'third commit'
+[master 33ad63e] third commit
+ 1 files changed, 240 insertions(+), 1 deletions(-)
+ rewrite README (100%)
+
+Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
+$ git push -u origin master
+Enter passphrase for key '/c/Documents and Settings/Administrator/.ssh/id_rsa':
+
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.94 KiB, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:fia/AiFia.git
+   47f55c4..33ad63e  master -> master
 Branch master set up to track remote branch master from origin.
 
 Administrator@WWW-0F1F3BCC3BB ~/Aifia (master)
